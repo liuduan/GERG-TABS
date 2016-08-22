@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>SlideshowBox Embed Code Test</title>
+	<style type="text/css">body {margin: 0; padding: 0; text-align: center; background-color: #000000;} div {position: relative; margin: auto; text-align: center;}</style>
+	<script type="text/javascript">
+		<!-- Begin Vertical alignment -->
+		function getWindowHeight() {var windowHeight = 0; if (typeof(window.innerHeight) == 'number') {windowHeight = window.innerHeight;} else {if (document.documentElement && document.documentElement.clientHeight) { windowHeight = document.documentElement.clientHeight;} else { if (document.body && document.body.clientHeight) {windowHeight = document.body.clientHeight;}}}	return windowHeight;}		
+		function setContent() {if (document.getElementById) {var windowHeight = getWindowHeight(); if (windowHeight > 0) {var contentElement = document.getElementById('content'); var contentHeight = contentElement.offsetHeight; if (windowHeight - contentHeight > 0) {contentElement.style.position = 'relative';contentElement.style.top = parseInt((windowHeight / 2) - (contentHeight / 2)) + 'px';}else { contentElement.style.position = 'static';}}}}
+		window.onload = function() {setContent();} 
+		window.onresize = function() {setContent();}
+		<!-- END Vertical alignment -->
+	</script>
+</head>
+
+<body>
+	<div id="content">
+		
+		<!-- Insert your embed code below -->
+	
+		<script type="text/javascript" src="swfobject.js"></script>
+		<script type="text/javascript" src="SimpleFade.js"></script>
+		<script type="text/javascript">
+			swfobject.registerObject("SimpleFade1299743087984", "9.0.115", "", function(e) {
+				if (e.success==false){
+					var err;
+					try{
+						$("#SimpleFade1299743087984").hide();
+						$.slideshowBoxEmbedCanvas.init({
+							appendToID:"SimpleFadeJS1299743087984",
+							domainKeys:"",
+							source:"source.xml",
+							audioFile:"",
+							audioFileAlt:"",
+							audioPlayerIcon:"speaker",
+							audioPlayerColor:"#FFFFFF",
+							loopAudio:true,
+							audioPlayMode:"audioOff",
+							audioPlayerOn:"",
+							audioPlayerOff:"",
+							width:800,
+							height:600,					
+							autoSlideShow:true,
+							slideShowSpeed:6,
+							backgroundVisible:true,
+							backgroundColor:"#1C1C1C",
+							backgroundImage:"",
+							scaleBackground:true,
+							loadOriginalImages:false,
+							autoHideControls:true,
+							controlsHideSpeed:2,
+							controlBarAlpha:0.8,
+							controlBarPrimaryColor:"#333333",
+							controlBarSecondaryColor:"#FFFFFF",
+							navigationControls:true,
+							slideShowControls:true,
+							fullScreenButton:true,
+							showImageIndex:true,
+							showImageInfos:true,
+							scaleMode:"scaleCrop",
+							preloaderPosition:"centered"
+						});
+					}catch(err){}
+				}
+			});
+		</script>
+		<div id="SimpleFadeJS1299743087984" style="width:800px;height:600px;">
+			<object id="SimpleFade1299743087984" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="800" height="600">
+				<param name="movie" value="SimpleFade.swf" />
+				<param name="allowFullScreen" value="true" />
+				<param name="allowScriptAccess" value="sameDomain" />
+				<param name="bgcolor" value="#1C1C1C" />
+				<param name="wmode" value="window" />
+				<param name="flashvars" value="source=source.xml&domainKeys=&audioFile=&audioPlayerIcon=speaker&audioPlayerColor=0xFFFFFF&loopAudio=true&audioPlayMode=audioOff&autoSlideShow=true&slideShowSpeed=6&backgroundVisible=true&backgroundColor=0x1C1C1C&backgroundImage=&scaleBackground=true&loadOriginalImages=false&autoHideControls=true&controlsHideSpeed=2&controlBarAlpha=0.8&controlBarPrimaryColor=0x333333&controlBarSecondaryColor=0xFFFFFF&navigationControls=true&slideShowControls=true&fullScreenButton=true&showImageIndex=true&showImageInfos=true&scaleMode=scaleCrop&preloaderPosition=centered" />
+				<!--[if !IE]>-->
+				<object type="application/x-shockwave-flash" data="SimpleFade.swf" width="800" height="600">
+				<!--<![endif]-->
+					<param name="flashvars" value="source=source.xml&domainKeys=&audioFile=&audioPlayerIcon=speaker&audioPlayerColor=0xFFFFFF&loopAudio=true&audioPlayMode=audioOff&autoSlideShow=true&slideShowSpeed=6&backgroundVisible=true&backgroundColor=0x1C1C1C&backgroundImage=&scaleBackground=true&loadOriginalImages=false&autoHideControls=true&controlsHideSpeed=2&controlBarAlpha=0.8&controlBarPrimaryColor=0x333333&controlBarSecondaryColor=0xFFFFFF&navigationControls=true&slideShowControls=true&fullScreenButton=true&showImageIndex=true&showImageInfos=true&scaleMode=scaleCrop&preloaderPosition=centered" />
+					<param name="allowFullScreen" value="true" />
+					<param name="allowScriptAccess" value="sameDomain" />
+					<param name="wmode" value="window" />
+					<param name="bgcolor" value="#1C1C1C" />
+				<!--[if !IE]>-->
+				</object>
+				<!--<![endif]-->
+			</object>
+		</div>
+		
+		<!-- Embed code ends here -->
+		
+	</div>
+</body>
+
+</html>

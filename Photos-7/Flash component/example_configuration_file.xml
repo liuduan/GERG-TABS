@@ -1,0 +1,63 @@
+﻿<SlideshowBox>
+	
+	<!-- The list of properties for the SlideshowBox main Flash component. -->
+	<params>
+		<!-- The component properties you can set are config, source and templateName. The rest
+		of the component properties are read-only. However, the only property that should be\
+		set is source because templateName will be disregarded and config is the actual configuration
+		XML you are editing. -->
+		<source>
+			<type>String</type>
+			<value>source.xml</value>
+		</source>
+	</params>
+	
+	<template>
+		
+		<!-- The full package and class name of the Flash SlideshowBox template. -->
+		<className>com.jumpeye.slideshowBox.templates.SimpleGrid</className>
+		
+		<!-- Here you can specify what template properties to be set. The properties
+		that are left out will be left at their default values. -->
+		<params>
+			<backgroundColor>
+				<type>Number</type>
+				<value>0x000000</value>
+			</backgroundColor>
+			<backgroundImage>
+				<type>String</type>
+				<value>myBackgroundImage.jpg</value>
+			</backgroundImage>
+			<scaleBackground>
+				<type>Boolean</type>
+				<value>true</value>
+			</scaleBackground>
+			<controlBarAlpha>
+				<type>Number</type>
+				<value>0.4</value>
+			</controlBarAlpha>
+			<controlBarPrimaryColor>
+				<type>Number</type>
+				<value>0x333333</value>
+			</controlBarPrimaryColor>
+			<controlBarSecondaryColor>
+				<type>Number</type>
+				<value>0xFFFFFF</value>
+			</controlBarSecondaryColor>
+			<navigationControls>
+				<type>Boolean</type>
+				<value>true</value>
+			</navigationControls>
+			<slideShowControls>
+				<type>Boolean</type>
+				<value>true</value>
+			</slideShowControls>
+			<fullScreenButton>
+				<type>Boolean</type>
+				<value>true</value>
+			</fullScreenButton>
+		</params> <!-- The end of the SimpleGrid template propertiies declaration. -->
+		
+	</template>
+	
+</SlideshowBox>

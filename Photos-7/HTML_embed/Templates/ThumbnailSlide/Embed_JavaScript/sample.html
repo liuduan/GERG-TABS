@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>SlideshowBox Embed Code Test</title>
+	<style type="text/css">body {margin: 0; padding: 0; text-align: center; background-color: #000000;} div {position: relative; margin: auto; text-align: center;}</style>
+	<script type="text/javascript">
+		<!-- Begin Vertical alignment -->
+		function getWindowHeight() {var windowHeight = 0; if (typeof(window.innerHeight) == 'number') {windowHeight = window.innerHeight;} else {if (document.documentElement && document.documentElement.clientHeight) { windowHeight = document.documentElement.clientHeight;} else { if (document.body && document.body.clientHeight) {windowHeight = document.body.clientHeight;}}}	return windowHeight;}		
+		function setContent() {if (document.getElementById) {var windowHeight = getWindowHeight(); if (windowHeight > 0) {var contentElement = document.getElementById('content'); var contentHeight = contentElement.offsetHeight; if (windowHeight - contentHeight > 0) {contentElement.style.position = 'relative';contentElement.style.top = parseInt((windowHeight / 2) - (contentHeight / 2)) + 'px';}else { contentElement.style.position = 'static';}}}}
+		window.onload = function() {setContent();} 
+		window.onresize = function() {setContent();}
+		<!-- END Vertical alignment -->
+	</script>
+</head>
+
+<body>
+	<div id="content">
+		
+		<!-- Insert your embed code below -->
+	
+		<div id="ThumbnailSlideJS1288358928906" style="width:800px;height:600px;"></div>
+		<script type="text/javascript" src="ThumbnailSlide.js"></script>
+		<script type="text/javascript">
+			(function() {
+				var err;
+				try{
+					$.slideshowBoxEmbedCanvas.init({
+						appendToID:"ThumbnailSlideJS1288358928906",
+						source:"source.xml",
+						width:800,
+						height:600,				
+						autoSlideShow:false,
+						backgroundColor:"#1C1C1C",
+						backgroundImage:"",
+						backgroundVisible:true,
+						controlsColor:"#FFFFFF",
+						fullScreenButton:true,
+						lineColor:"#666666",
+						lineSpacing:10,
+						loadOriginalImages:false,
+						navigationControls:true,
+						preloaderPosition: 'centered', // other values: topLeft, topRight
+						scaleBackground:true,
+						showImageIndex:false,
+						showImageInfos:true,
+						slideShowControls:true,
+						slideShowSpeed:6,
+						textColor:"#FFFFFF",
+						topBottomMargin:40,
+
+						//control labels
+						fullScreenButtonLabel: 'Full screen',
+						normalScreenButtonLabel: 'Normal screen',
+						previousButtonLabel: 'Previous',
+						previousImageLabel: 'Previous',
+						playButtonLabel: 'Play',
+						pauseButtonLabel: 'Pause',
+						nextButtonLabel: 'Next',
+						nextImageLabel: 'Next',
+						closeButtonLabel: 'Close',
+						
+						//audio
+						audioPlayerOn: null,
+						audioPlayerOff: null,
+						audioPlayMode: 'audioOff', // other values: audioOn, synchronizeWithSlideshow 
+						audioPlayerIcon: 'speaker',
+						audioPlayerColor: '#ffffff',
+						loopAudio: true,
+						audioFile: null,
+						audioFileAlt: null,
+
+						//fonts
+						fontName: '',
+						fontSize: 10,
+						bold: false,
+						italic: false,
+						textTopOffset: 0,
+						controlLabelFontName: '',
+						controlLabelFontSize: 11,
+						controlLabelBold: false,
+						controlLabelItalic: true,
+						
+						domainKeys: ''
+					});
+				}catch(err){}
+			})();
+		</script>
+		
+		<!-- Embed code ends here -->
+		
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,531 @@
+/* Department of Oceanography, Joomla 1.5 Template, Brandon Green, Nov 08 */
+/* CSS specific to the front page template */
+
+/* ----------------------------- */
+body /*background-color: #77899b;*/
+{
+  		margin: 0px;
+ 		padding: 0px;
+  		font-family: arial, helvetica, sans-serif;
+  		background-image: url(./tile.gif);  /*changes the color of the striped background*/
+  		background-repeat: repeat;
+  		text-align: left;
+  		font-family: arial, helvetica, sans-serif;
+  		font-size: 14px;
+  		color:#000
+  		text-shadow: 0 0 0 #000; /* Safari on windows hack to prevent ridiculously bold text */
+  		padding: 0px 10px;
+}
+/* ----------------------------- */
+
+#container-shadow /*controls side shadow*/
+{
+  		position: absolute;
+		top: 53px;
+		left: 1%;
+		right: 1%;	
+		margin: 0; 
+		padding: 0;
+		/*
+		border-style:solid;
+		border-width:4px;
+		border-color:red;
+		background-color: red;*/
+		z-index:-100;
+}
+
+/* ----------------------------- */
+
+/* FORMATTING FOR UPPERLINKS MENU */
+div#upperlinks 
+{
+	  	position: absolute;
+		top: -25px;
+		right: 0%;
+		left: 0%;
+	 	padding: 4px 10px;
+	  	text-align: right;
+	  	background-color:#edf5fb;
+}
+/* ----------------------------- */
+/* FORMATTING FOR DEPARTMENT/A&M BANNER*/
+div#banner /* contains College & A&M logo image */
+{
+		position:absolute;
+		top: 0px;              /*do not understand, why 0px here. */
+		width:100%;
+		height:67px;
+		background: url(./banner-fill.jpg) repeat-x;
+	  	background-color: #293e6b;
+		z-index:-1;
+}
+div#tglo-tamu-banner/* contains College & A&M logo image */
+{
+		position:absolute;
+		top: 0px;              /*do not understand, why 0px here. */
+		right: 7%;
+		height:67px;
+		background: url(./banner-fill.jpg) repeat-x;
+	  	background-color: #293e6b;
+		z-index:0;
+}
+/* ----------------------------- */
+/* FORMATTING FOR TOP MENU, .-- TABS  --. */
+div#toplinks /* .--   --.  all the top fake links,*/
+{
+	  	position:absolute;
+		top: 67px;
+		left:0%;
+		right: 0%;
+		/*padding-left: 168px;*/
+	 	background-color: #c0c8d6;
+		z-index: 0;
+}
+/* ----------------------------- */
+div#topright /* controls location of search box*/
+{
+		position: absolute;
+		top: 66px;
+		width:150px;
+		left: 80%;  /*should be left: 75% */
+		z-index:1;
+}
+/* ----------------------------- */
+div#mmenu_area /* main menu area */
+{
+  		position: absolute;
+  		top: 89px;
+  		left: 0%; 
+		width: 10%;
+  		/*right: 92.5%;
+  		height: 50%;*/
+  		background-color: #c0c8d6;
+		z-index: 6;
+}
+/* ----------------------------- */
+div#photo /* large front horizontal image formatting and placement*/
+{
+  		position: absolute;
+  		top: 89px;
+  		left: 10.7%;
+  		width: 86.3%;
+  		height: 703px;
+		/*
+		border-width:4px;
+		border-style:inset;
+		border-color:#CCCCFF;
+  		background-color: #000;
+		*/
+		z-index: 4;
+}
+/* ----------------------------- */
+div#icons /* icon image formatting and placement*/
+{
+  		position: absolute;
+  		top: 89px;
+  		right: 0%;
+  		width: 3.2%;
+  		height: 698px;
+  		padding-top: 5px;
+  		background-color: #293e6b;
+		z-index:4
+}
+/* ----------------------------- */
+div#spacer  /* The light green blue stripe (looks white, right under side menue.) */
+{
+		 position:absolute;
+		 top: 342px;
+		 left: 0%;
+		 height: 252px;
+		 right: 0%;  
+		 padding: 4px 10px;
+		 background-color: White;
+		 font-size: 10pt;
+		 color: Lime;
+	     font-weight: bold;
+		 z-index: 0;		  
+}
+
+/* ----------------------------- */
+div#footer_top  /* The light green blue stripe. quicklinks title bar */
+{
+		 position:absolute;
+		 top: 584px;
+		 left: 0%;
+		 height: 210px;
+		 right: 0%;  
+		 padding: 4px 10px;
+		 background-color: #edf5fb;
+		 font-size: 10pt;
+ 		 color: #000000;
+		 /*color: #333333;*/
+	     font-weight: bold;
+		 z-index: -1;		  
+}
+/* ----------------------------- */
+div#footer_bot  /* The blue stripe */
+{
+		 position:absolute;
+		 top: 790px;
+		 height: 20px; 
+		 left: 0%;
+		 right: 0%;
+		 padding: 4px 10px;
+		 text-align: center;
+		 font-size: 5pt;
+		 font-weight: normal;
+		 background-color: #293e6b;
+		 clear: both;
+		 z-index:5;	
+}
+
+
+/* ----------------------------- */
+/* PAGE DIVISION FORMATTING */
+/* ----------------------------- */
+#top-shadow /*controls bottom shadow*/
+{
+  		position: absolute;
+		top: 8px;
+		left: 1%;
+		background: url(./shadow_top2.png) repeat-x;
+		height: 30px;
+		width: 98%;
+		z-index: 2;
+}
+
+#left-shadow /*controls side shadow*/
+{
+  		position: absolute;
+		background: url(./shadow_right.png) repeat-y;
+		top: -25px;
+		width: 20px;
+		height:844px;
+		left: 0%;
+		margin: 0; 
+		padding: 0;
+		border:0;
+		z-index:505;
+}
+/* ----------------------------- */
+#right-shadow /*controls side shadow*/
+{
+  		position: absolute;
+		background: url(./shadow_left.png) repeat-y;
+		top: -27px;
+		height:846px;
+		right: 0%;
+		width: 20px;
+		margin: 0; 
+		padding: 0;
+		border:0;
+		z-index:30;
+}
+/* ----------------------------- */
+#bottom-shadow /*controls bottom shadow*/
+{
+  		position: absolute;
+		top: 818px;
+		background: url(./shadow_bot2.png) repeat-x;
+		height: 30px;
+		float: left;
+		width: 100%;
+		margin-bottom: -50px;
+		z-index: 2;
+}
+/*
+#inner-shadows *//*controls bottom shadow*/  
+/*{
+  		position: absolute;
+		top: 91px;
+		left: 11%;
+
+		height: 400px;
+		float: left;
+		width: 85.3%;
+		z-index: 3;
+} 
+*/
+
+#inner-top-shadow-1 /*controls bottom shadow*/  
+{
+  		position: absolute;
+		top: 91px;
+		left: 10.7%;
+		background: url(./shadow_bot2.png) repeat-x;
+		height: 20px;
+		float: left;
+		width: 55%;
+		z-index: 5;
+} 
+
+#inner-top-shadow-2 /*controls bottom shadow*/  
+{
+  		position: absolute;
+		top: 91px;
+		left: 65.7%;
+		background: url(./shadow_bot2.png) repeat-x;
+		height: 7px;
+		float: left;
+		width: 31.2%;
+		z-index: 5;
+} 
+
+#inner-left-shadow-1 /*controls bottom shadow*/  
+{
+  		position: absolute;
+		top: 96px;
+		left: 10.7%;
+		background: url(./shadow_right.png) repeat-y;
+		height: 247px;
+		float: left;
+		width: 20px;
+		z-index: 5;
+} 
+
+#inner-left-shadow-2 /*controls bottom shadow*/  
+{
+  		position: absolute;
+		top: 341px;
+		right: 89.2%;
+		background: url(./shadow_left.png) repeat-y;
+		height: 449px;
+		float: left;
+		width: 20px;
+		z-index: 5;
+} 
+
+#inner-right-shadow /*controls bottom shadow*/  
+{
+  		position: absolute;
+		top: 92px;
+		left: 96.8%;
+		background: url(./shadow_right.png) repeat-y;
+		height: 698px;
+		width: 20px;
+		z-index: 5;
+} 
+
+#inner-bottom-shadow /*controls bottom shadow*/  
+{
+  		position: absolute;
+		top: 770px;
+		left: 10.7%;
+		background: url(./shadow_top2.png) repeat-x;
+		height: 20px;
+		float: left;
+		width: 86.1%;
+		z-index: 5;
+} 
+
+
+
+
+
+
+
+
+
+#upperlinks a /* link color & size*/
+{
+		color: #2b2b2b;
+		font-size: 8pt;
+}
+/* ----------------------------- */
+#upperlinks a:hover /* hover color & size*/
+{
+		color: #888888;
+		font-size: 8pt;
+}
+/* ----------------------------- */
+
+
+
+/* ARTICLE TITLE & TEXT FORMATTING */
+p /* Controls how text appears on all content pages */
+{
+		text-align: left;
+		font-family: arial, helvetica, sans-serif;
+		font-size: 14px;
+		color:#000
+		text-shadow: 0 0 0 #000; /* Safari on windows hack to prevent ridiculously bold text */
+		padding: 10px 10px 10px 10px;
+		margin-top: 0em; /* spacing at top of paragraph, always set to zero */
+		margin-bottom: 0em; /* spacing at bottom of paragraph of paragraph, increase to 1 if more spacing betweeen paragraphs is desired */
+} 
+
+/* ----------------------------- */
+.contentheading /* Article title formatting */
+{
+		font-size: 22px;
+		font-family: Georgia, New York, MS Serif;
+        color: #283f6b;
+		line-height: 32px;
+		font-weight: bold;
+		margin-top: 10;
+		margin-bottom: 10;
+		margin-left: 10;		
+		padding-left:10px;
+}
+/* ----------------------------- */
+.title /* Article title formatting on News page */
+{
+		font-size: 18px;
+		font-family: Georgia, New York, MS Serif;
+		color: #293e6b;
+		line-height: 16px;
+		font-weight: bold;
+		margin-top: 10;
+		margin-bottom: 10;
+		margin-left: 10;
+	}
+/* ----------------------------- */
+h1 /* Heading 1 formatting */ 
+{
+		font-size: 16px;
+		font-family: Arial, Helvetica, sans-serif;
+		color: #666666;
+		line-height: 16px;
+		font-weight: bold;
+		margin-top: 14;
+		margin-bottom: 14;
+		margin-left: 5px;
+}
+/* ----------------------------- */
+h2 /* Heading 2 formatting */
+{
+		font-family: Arial, Helvetica, sans-serif;
+		color: #000;
+		font-size: 14px;
+		line-height: 16px;
+		font-weight: bold;
+		margin-top: 0;
+		margin-bottom: 10;
+		margin-left: 5px;
+}
+/* ----------------------------- */
+h3 /* Heading 3 formatting */
+{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 14px;
+		line-height: 14px;
+		font-weight: bold;
+		margin-top: 5px;
+		margin-bottom: 10px;
+		color: #3D59AB;
+		margin-left: 5px;
+}
+/* ----------------------------- */
+h4 /* Heading 4 formatting */
+{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		line-height: 12px;
+		font-weight: bold;
+		margin-top: 5px;
+		margin-bottom: 3px;
+		padding-left: 5px;
+		color: #000;
+}
+/* LINK FORMATTING */
+a:link 	/* Content link formatting */
+{
+		color:#293e6b;
+		text-decoration: none;
+}
+/* ----------------------------- */
+a:visited 	/* Visted link formatting */
+{
+		color: #736f6e;
+		text-decoration: none;
+}
+/* ----------------------------- */
+a:hover 	/* Formatting for hovering over links*/
+{
+		color:#899a6f;
+		text-decoration: none;
+}
+/* ----------------------------- */
+a:active 	/* Content link formatting */
+{
+		color:#736f6e;
+		text-decoration: none;
+}
+/* ----------------------------- */
+
+/* PROFILE LIST FORMATTING*/
+.pl_contain
+{
+		float:left;
+		width:565px;
+		margin-left:20px;
+		margin-top:30px;
+		color:#555;
+ }
+ /* ----------------------------- */
+.pl_picture 
+{
+		float:left;
+		border: 1px solid #ccc;
+}
+/* ----------------------------- */
+.pl_greybar 
+{
+		width:400px;
+		height:1px;
+		background:url(http://geosciences.tamu.edu/image/greydot.png);
+		font-size:2px;
+}
+/* ----------------------------- */
+.pl_text_name 
+{
+		float:left;
+		width:475px;
+		margin-left:15px;
+		font-size:14px;
+}
+/* ----------------------------- */
+.pl_text 
+{
+		float:left;
+		width:475px;
+		margin-left:15px;
+		font-size:11px;
+}
+
+/* ----------------------------- */
+
+#upper_menu 
+{
+	  	margin: 0px;
+	  	display: inline;
+}
+/* ----------------------------- */
+#upper_menu li /* spacing between links */
+{
+	  	display: inline;
+	  	padding: 0px 4px;
+}
+
+
+/* FORMATTING FOR FOOTER BAR (2009 All Rights Reserved, Texas A&M University ?  Webmaster ? Contact Us ? Site Policies)*/
+
+/* ----------------------------- */
+.footer_text /* footer text color & size */
+{
+		 color:#FFF;
+		 font-size: 8pt;
+}
+/* ----------------------------- */
+.footer_text a /* footer link color & size */
+{
+   		 color:#FFF;
+		 font-size: 8pt;
+}
+/* ----------------------------- */
+.footer_text a:hover  /* footer link hover color & size*/
+{
+      	 color: #888888;
+		 font-size: 8pt;
+}
+/* ----------------------------- */

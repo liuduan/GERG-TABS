@@ -1,0 +1,82 @@
+﻿<!--
+This XML file contains the list of images used for the slide show. Each image can have up
+to three versions: a small sized version to be used as thumbnail, a larger sized version
+used as normal images and full screen sized version (the largest size) displayed while the
+slide show is in the full screen mode.
+
+Each version of the image has its own path, that has to be specifed within the appropriate
+XML tags:
+- <thumbnailPath></thumbnailPath> - between these two tags, you have to specify the path
+and file name of the thumbnail image
+- <largeImagePath></largeImagePath> - these two tags must contain the path and file name
+of the normal sized image - YOU SHOULD ALWAYS SET AT LEAST THIS IMAGE
+- <fullScreenImagePath></fullScreenImagePath> - these tags contain the path and file name
+of the large sized images, used for the full screen view
+
+The <title> and <description> tags contain the title and description of the image. This
+information should be added inside the CDATA section. However, it is not necessary to add
+title and description to the images.
+
+For more information about XML please read this documentation: http://en.wikipedia.org/wiki/XML
+For more information about the structure of the source XML file, please consult the 
+The Source XML File.pdf document.
+-->
+<SlideshowBox>		<!-- This is the main tag of the XML file. There should always be main tag. -->
+	
+	<!-- The list of images -->
+	<items>
+		
+		<!-- Information for image 1 -->
+		<item>
+			<!--
+			This node should contain the path/URL to the thumbnail image
+			for this particular image. The URL can be either absolute or relative
+			to another path.
+			-->
+			<thumbnailPath>http://www.mydomain.com/slideshow/images/thumbnails/thumbnail_01.jpg</thumbnailPath>
+			
+			<!--
+			This node should contain the path/URL to the large image displayed
+			in normal screen mode. The URL can be either absolute or relative
+			to another path.
+			-->
+			<largeImagePath>images/large/image_01.jpg</largeImagePath>
+			
+			<!--
+			This node should contain the path/URL to the large image displayed
+			in FULL SCREEN mode. The URL can be either absolute or relative
+			to another path.
+			-->
+			<fullScreenImagePath>images/fullscreen/fullscreen_03.jpg</fullScreenImagePath>
+			
+			<!--
+			The title and description for each image must be specified
+			within the CDATA tag of the <title> and <description> nodes.
+			-->
+			<title><![CDATA[Title for image 1]]></title>
+			<description><![CDATA[This would be a short description of image 1]]></description>
+		</item>
+		
+		<!-- Information for image 2 -->
+		<item>
+			<thumbnailPath>http://www.mydomain.com/slideshow/images/thumbnails/thumbnail_02.jpg</thumbnailPath>
+			<largeImagePath>images/large/image_02.jpg</largeImagePath>
+			<fullScreenImagePath>images/fullscreen/fullscreen_01.jpg</fullScreenImagePath>
+			<title><![CDATA[Title for image 2]]></title>
+			<description><![CDATA[This would be a short description of image 2]]></description>
+		</item>
+		
+		<!-- Information for image 3 -->
+		<item>
+			<thumbnailPath>http://www.mydomain.com/slideshow/images/thumbnails/thumbnail_03.jpg</thumbnailPath>
+			<largeImagePath>images/large/image_03.jpg</largeImagePath>
+			<fullScreenImagePath>images/fullscreen/fullscreen_03.jpg</fullScreenImagePath>
+			<title><![CDATA[Title for image 3]]></title>
+			<description><![CDATA[This would be a short description of image 3]]></description>
+		</item>
+		
+		<!-- Other items... -->
+		
+	</items> <!-- The image list ends here -->
+	
+</SlideshowBox>

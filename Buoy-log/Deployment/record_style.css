@@ -1,0 +1,83 @@
+
+
+
+<!--
+body
+{
+background-color:"c0c8d6";
+background-image:url('blue-shadow.png');
+background-repeat:repeat-x;
+font-family: Arial, Verdana, Geneva, sans-serif;
+}
+
+
+.TITLE-STYLE{
+	color: #000066;
+	font-size: 30px;
+	font-weight:bold;
+}
+
+.Sub_TITLE-STYLE{
+	color: #000066;
+	font-size: 24px;
+	font-weight:bold;
+}
+
+.HEADING-STYLE{
+	color: #000066;
+	font-size: 16px;
+	font-weight:bold;
+}
+
+plain {	color: #000066;
+	font-size: 12px;}
+	
+bold {	color: #000066;
+	font-size: 14px;
+	font-weight:bold;}
+
+
+.plain-STYLE{
+	color: #000066;
+	font-size: 12px;
+}
+
+.bold-STYLE{
+	color: #000066;
+	font-size: 14px;
+	font-weight:bold;
+}
+
+.fixed-width{font-family:monospace;}
+
+#tool-bar {
+	/*background-color: #0066cc;*/
+	background-image: url(http://tabs2.gerg.tamu.edu/tglo/testpages/Buoy-log/TABSI/tool-bar-bg.png);
+	background-repeat: repeat-x;
+	color: #64e0fe;
+	font-size: 14px;
+	font-weight: bold;
+	height: 28px;
+	margin:3px; 
+	padding:5px;
+	text-align:center;
+}
+
+#tool-bar a:link {color:#64e0fe; text-decoration:none;}      /* unvisited link */
+#tool-bar a:visited {color:#64e0fe;}  /* visited link */
+#tool-bar a:hover {color:#64e0fe;}  /* mouse over link */
+#tool-bar a:active {color:#64e0fe;}  /* selected link */
+
+	/*
+#bottom {
+	background-image: url(http://tabs2.gerg.tamu.edu/tglo/testpages/Buoy-log/TABSI/bottom-bg.png);
+	background-repeat: repeat-x;
+    position: absolute;
+    bottom:0px;
+	left: 0px;
+    right: 0px;
+    z-index: -1;
+    width:101%;
+}
+*/
+-->

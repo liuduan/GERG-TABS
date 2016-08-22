@@ -1,0 +1,125 @@
+﻿<!--
+This XML file contains the list of images used for the slide show. Each image can have up
+to three versions: a small sized version to be used as thumbnail, a larger sized version
+used as normal images and full screen sized version (the largest size) displayed while the
+slide show is in the full screen mode.
+
+Each version of the image has its own path, that has to be specifed within the appropriate
+XML tags:
+- <thumbnailPath></thumbnailPath> - between these two tags, you have to specify the path
+and file name of the thumbnail image
+- <largeImagePath></largeImagePath> - these two tags must contain the path and file name
+of the normal sized image - YOU SHOULD ALWAYS SET AT LEAST THIS IMAGE
+- <fullScreenImagePath></fullScreenImagePath> - these tags contain the path and file name
+of the large sized images, used for the full screen view
+
+The <title> and <description> tags contain the title and description of the image. This
+information should be added inside the CDATA section. However, it is not necessary to add
+title and description to the images.
+
+For more information about XML please read this documentation: http://en.wikipedia.org/wiki/XML
+For more information about the structure of the source XML file, please consult the 
+The Source XML File.pdf document.
+-->
+<album>		<!-- This is the main tag of the XML file. There should always be main tag. -->
+	<items>		<!-- The <items> tag contains the list of images used by the slide show. -->
+		<item>		<!-- The details for each image must be enclosed within the <item> tag. -->
+			<thumbnailPath>thumbnails/set1_01.jpg</thumbnailPath>
+			<largeImagePath>large/set1_01.jpg</largeImagePath>
+			<fullScreenImagePath>fullscreen/set1_01.jpg</fullScreenImagePath>
+			<title><![CDATA[]]></title>
+			<description><![CDATA[]]></description>
+		</item>
+		<item>
+			<thumbnailPath>thumbnails/set1_02.jpg</thumbnailPath>
+			<largeImagePath>large/set1_02.jpg</largeImagePath>
+			<fullScreenImagePath>fullscreen/set1_02.jpg</fullScreenImagePath>
+			<title><![CDATA[]]></title>
+			<description><![CDATA[]]></description>
+		</item>
+		<item>
+			<thumbnailPath>thumbnails/set1_03.jpg</thumbnailPath>
+			<largeImagePath>large/set1_03.jpg</largeImagePath>
+			<fullScreenImagePath>fullscreen/set1_03.jpg</fullScreenImagePath>
+			<title><![CDATA[]]></title>
+			<description><![CDATA[]]></description>
+		</item>
+		<item>
+			<thumbnailPath>thumbnails/set1_04.jpg</thumbnailPath>
+			<largeImagePath>large/set1_04.jpg</largeImagePath>
+			<fullScreenImagePath>fullscreen/set1_04.jpg</fullScreenImagePath>
+			<title><![CDATA[]]></title>
+			<description><![CDATA[]]></description>
+		</item>
+		<item>
+			<thumbnailPath>thumbnails/set1_05.jpg</thumbnailPath>
+			<largeImagePath>large/set1_05.jpg</largeImagePath>
+			<fullScreenImagePath>fullscreen/set1_05.jpg</fullScreenImagePath>
+			<title><![CDATA[]]></title>
+			<description><![CDATA[]]></description>
+		</item>
+		<item>
+			<thumbnailPath>thumbnails/set1_06.jpg</thumbnailPath>
+			<largeImagePath>large/set1_06.jpg</largeImagePath>
+			<fullScreenImagePath>fullscreen/set1_06.jpg</fullScreenImagePath>
+			<title><![CDATA[]]></title>
+			<description><![CDATA[]]></description>
+		</item>
+		<item>
+			<thumbnailPath>thumbnails/set1_07.jpg</thumbnailPath>
+			<largeImagePath>large/set1_07.jpg</largeImagePath>
+			<fullScreenImagePath>fullscreen/set1_07.jpg</fullScreenImagePath>
+			<title><![CDATA[]]></title>
+			<description><![CDATA[]]></description>
+		</item>
+		<item>
+			<thumbnailPath>thumbnails/set2_01.jpg</thumbnailPath>
+			<largeImagePath>large/set2_01.jpg</largeImagePath>
+			<fullScreenImagePath>fullscreen/set2_01.jpg</fullScreenImagePath>
+			<title><![CDATA[]]></title>
+			<description><![CDATA[]]></description>
+		</item>
+		<item>
+			<thumbnailPath>thumbnails/set2_02.jpg</thumbnailPath>
+			<largeImagePath>large/set2_02.jpg</largeImagePath>
+			<fullScreenImagePath>fullscreen/set2_02.jpg</fullScreenImagePath>
+			<title><![CDATA[]]></title>
+			<description><![CDATA[]]></description>
+		</item>
+		<item>
+			<thumbnailPath>thumbnails/set2_05.jpg</thumbnailPath>
+			<largeImagePath>large/set2_05.jpg</largeImagePath>
+			<fullScreenImagePath>fullscreen/set2_05.jpg</fullScreenImagePath>
+			<title><![CDATA[]]></title>
+			<description><![CDATA[]]></description>
+		</item>
+		<item>
+			<thumbnailPath>thumbnails/set2_06.jpg</thumbnailPath>
+			<largeImagePath>large/set2_06.jpg</largeImagePath>
+			<fullScreenImagePath>fullscreen/set2_06.jpg</fullScreenImagePath>
+			<title><![CDATA[]]></title>
+			<description><![CDATA[]]></description>
+		</item>
+		<item>
+			<thumbnailPath>thumbnails/set2_07.jpg</thumbnailPath>
+			<largeImagePath>large/set2_07.jpg</largeImagePath>
+			<fullScreenImagePath>fullscreen/set2_07.jpg</fullScreenImagePath>
+			<title><![CDATA[]]></title>
+			<description><![CDATA[]]></description>
+		</item>
+		<item>
+			<thumbnailPath>thumbnails/set3_01.jpg</thumbnailPath>
+			<largeImagePath>large/set3_01.jpg</largeImagePath>
+			<fullScreenImagePath>fullscreen/set3_01.jpg</fullScreenImagePath>
+			<title><![CDATA[]]></title>
+			<description><![CDATA[]]></description>
+		</item>
+		<item>
+			<thumbnailPath>thumbnails/set3_02.jpg</thumbnailPath>
+			<largeImagePath>large/set3_02.jpg</largeImagePath>
+			<fullScreenImagePath>fullscreen/set3_02.jpg</fullScreenImagePath>
+			<title><![CDATA[]]></title>
+			<description><![CDATA[]]></description>
+		</item>
+	</items>
+</album>

@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>SlideshowBox Embed Code Test</title>
+	<style type="text/css">body {margin: 0; padding: 0; text-align: center; background-color: #000000;} div {position: relative; margin: auto; text-align: center;}</style>
+	<script type="text/javascript">
+		<!-- Begin Vertical alignment -->
+		function getWindowHeight() {var windowHeight = 0; if (typeof(window.innerHeight) == 'number') {windowHeight = window.innerHeight;} else {if (document.documentElement && document.documentElement.clientHeight) { windowHeight = document.documentElement.clientHeight;} else { if (document.body && document.body.clientHeight) {windowHeight = document.body.clientHeight;}}}	return windowHeight;}		
+		function setContent() {if (document.getElementById) {var windowHeight = getWindowHeight(); if (windowHeight > 0) {var contentElement = document.getElementById('content'); var contentHeight = contentElement.offsetHeight; if (windowHeight - contentHeight > 0) {contentElement.style.position = 'relative';contentElement.style.top = parseInt((windowHeight / 2) - (contentHeight / 2)) + 'px';}else { contentElement.style.position = 'static';}}}}
+		window.onload = function() {setContent();} 
+		window.onresize = function() {setContent();}
+		<!-- END Vertical alignment -->
+	</script>
+</head>
+
+<body>
+	<div id="content">
+		
+		<!-- Insert your embed code below -->
+	
+		<div id="GridScaleJS1288358278515" style="width:800px;height:600px;"></div>
+		<script type="text/javascript" src="GridScale.js"></script>
+		<script type="text/javascript">
+			(function() {
+				var err;
+				try{
+					$.slideshowBoxEmbedCanvas.init({
+						appendToID:"GridScaleJS1288358278515",
+						source:"source.xml",
+						width:800,
+						height:600,
+						autoGrid: false,
+						autoSlideShow:true,
+						backgroundColor:"#333333",
+						backgroundImage:"",
+						backgroundVisible:true,
+						columns: 4,
+						controlBarAlpha: 1,
+						controlBarPrimaryColor:"#000000",
+						controlBarSecondaryColor:"#FFFFFF",
+						controlBarType: 'large', //other values: small
+						fullScreenButton:true,
+						loadOriginalImages:false,
+						navigationControls:true,
+						preloaderPosition: 'centered', // other values: topLeft, topRight
+						rows: 4,
+						scaleBackground:true,
+						showImageInfos:true,
+						slideShowControls:true,
+						slideShowSpeed:6,
+						textBackgroundAlpha: 0.5,
+						textBackgroundColor: '#000000',
+						textColor: '#ffffff',
+						
+						//text labels
+						upButtonLabel: 'Up',
+						downButtonLabel: 'Down',
+						fullScreenButtonLabel: 'FullScreen',
+						normalScreenButtonLabel: 'NormalScreen',
+						previousButtonLabel: 'Previous',
+						playButtonLabel: 'Play',
+						pauseButtonLabel: 'Pause',
+						thumbsButtonLabel: 'Thumbs',
+						nextButtonLabel: 'Next',
+						
+						//audio
+						audioPlayerOn: null,
+						audioPlayerOff: null,
+						audioPlayMode: 'audioOff', // other values: audioOn, synchronizeWithSlideshow 
+						audioPlayerIcon: 'speaker',
+						audioPlayerColor: '#ffffff',
+						loopAudio: true,
+						audioFile: null,
+						audioFileAlt: null,
+
+						//fonts
+						fontName: '',
+						fontSize: 11,
+						bold: false,
+						italic: false,
+						textTopOffset: 0,
+						controlLabelFontName: '',
+						controlLabelFontSize: 9,
+						controlLabelBold: false,
+						controlLabelItalic: false,
+						
+						domainKeys: ''
+					});
+				}catch(err){}
+			})();
+		</script>
+		
+		<!-- Embed code ends here -->
+		
+	</div>
+</body>
+
+</html>

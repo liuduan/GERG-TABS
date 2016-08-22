@@ -1,0 +1,154 @@
+/* Department of Oceanography, Joomla 1.5 Template, Brandon Green, Nov 08 */
+/* CSS specific to the front page template */
+
+
+div#mainbody /* div that holds mainmenu, articlebody, and icons. background is repeated vertically, and has 3 colors */
+{
+  		position: absolute;
+		left: 0px;
+		right: 0px;
+  		background-color: #fff;
+}
+/* FORMATTING FOR UPPERLINKS MENU */
+div#upperlinks 
+{
+	  	position: absolute;
+		top: -25px;
+		right: 0%;
+		left: 0%;
+	 	padding: 4px 10px;
+	  	text-align: right;
+	  	background-color:#edf5fb;
+}
+/* ----------------------------- */
+/* FORMATTING FOR DEPARTMENT/A&M BANNER*/
+div#banner /* contains College & A&M logo image */
+{
+		position:absolute;
+		width:100%;
+		height:67px;
+		background: url(./banner-fill.jpg) repeat-x;
+	  	background-color: #293e6b;
+		z-index:0;
+}
+div#banner1 /* contains College & A&M logo image */
+{
+		width:100px;
+}
+div#banner2 /* contains College & A&M logo image */
+{
+		width:100px;
+}
+div#banner3 /* contains College & A&M logo image */
+{
+		width:100px;
+}
+/* ----------------------------- */
+/* FORMATTING FOR TOP MENU, .-- TABS  --. */
+div#toplinks /* .--   --.  all the top fake links,*/
+{
+	  	position:absolute;
+		top: 67px;
+		left:0%;
+		right: 0%;
+		/*padding-left: 168px;*/
+	 	background-color: #c0c8d6;
+		z-index: 0;
+}
+/* ----------------------------- */
+div#topright /* controls location of search box*/
+{
+		position: absolute;
+		top: 66px;
+		width:150px;
+		left: 80%;  /*should be left: 75% */
+		z-index:1;
+}
+/* ----------------------------- */
+div#mmenu_area /* main menu area */
+{
+  		position: absolute;
+  		top: 89px;
+  		left: 0%; 
+  		right: 82.5%;
+  		height: 50%;
+  		background-color: #c0c8d6;
+		z-index: 100;
+}
+/* ----------------------------- */
+div#photo /* large front horizontal image formatting and placement*/
+{
+  		position: absolute;
+  		top: 89px;
+  		left: 17.5%;
+  		width: 73.7%;
+  		height: 599px;
+		border-width:4px;
+		border-style:inset;
+		border-color:#CCCCFF;
+  		background-color: #000;
+		z-index: 2;
+}
+/* ----------------------------- */
+div#icons /* icon image formatting and placement*/
+{
+  		position: absolute;
+  		top: 89px;
+  		right: 0%;
+  		width: 8%;
+  		height: 604px;
+  		padding-top: 5px;
+  		padding-left: 0px;
+  		background-color: #293e6b;
+		z-index:1
+}
+/* ----------------------------- */
+div#spacer  /* The light green blue stripe (looks white, right under side menue.) */
+{
+		 position:absolute;
+		 top: 364px;
+		 left: 0%;
+		 height: 230px;
+		 right: 0%;  
+		 padding: 4px 10px;
+		 background-color: White;
+		 font-size: 10pt;
+		 color: Lime;
+	     font-weight: bold;
+		 z-index: 0;		  
+}
+
+/* ----------------------------- */
+div#footer_top  /* The light green blue stripe. quicklinks title bar */
+{
+		 position:absolute;
+		 top: 594px;
+		 left: 0%;
+		 height: 100px;
+		 right: 0%;  
+		 padding: 4px 10px;
+		 background-color: #edf5fb;
+		 font-size: 10pt;
+		 color: #333333;
+	     font-weight: bold;
+		 z-index: 0;		  
+}
+/* ----------------------------- */
+div#footer_bot  /* The blue stripe */
+{
+		 position:absolute;
+		 top: 697px;
+		 height: 20px; 
+		 left: 0%;
+		 right: 0%;
+		 padding: 4px 10px;
+		 text-align: center;
+		 font-size: 5pt;
+		 font-weight: normal;
+		 background-color: #293e6b;
+		 clear: both;
+		 z-index:4;	
+}
+
+
+/* ----------------------------- */

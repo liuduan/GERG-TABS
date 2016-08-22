@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>SlideshowBox Embed Code Test</title>
+	<style type="text/css">body {margin: 0; padding: 0; text-align: center; background-color: #000000;} div {position: relative; margin: auto; text-align: center;}</style>
+	<script type="text/javascript">
+		<!-- Begin Vertical alignment -->
+		function getWindowHeight() {var windowHeight = 0; if (typeof(window.innerHeight) == 'number') {windowHeight = window.innerHeight;} else {if (document.documentElement && document.documentElement.clientHeight) { windowHeight = document.documentElement.clientHeight;} else { if (document.body && document.body.clientHeight) {windowHeight = document.body.clientHeight;}}}	return windowHeight;}		
+		function setContent() {if (document.getElementById) {var windowHeight = getWindowHeight(); if (windowHeight > 0) {var contentElement = document.getElementById('content'); var contentHeight = contentElement.offsetHeight; if (windowHeight - contentHeight > 0) {contentElement.style.position = 'relative';contentElement.style.top = parseInt((windowHeight / 2) - (contentHeight / 2)) + 'px';}else { contentElement.style.position = 'static';}}}}
+		window.onload = function() {setContent();} 
+		window.onresize = function() {setContent();}
+		<!-- END Vertical alignment -->
+	</script>
+</head>
+
+<body>
+	<div id="content">
+		
+		<!-- Insert your embed code below -->
+	
+		<div id="SimpleThumbviewJS1288358796765" style="width:800px;height:600px;"></div>
+		<script type="text/javascript" src="SimpleThumbview.js"></script>
+		<script type="text/javascript">
+			(function() {
+				var err;
+				try{
+					$.slideshowBoxEmbedCanvas.init({
+						appendToID:"SimpleThumbviewJS1288358796765",
+						source:"source.xml",
+						width:800,
+						height:600,				
+						autoHideControls:false,
+						autoSlideShow:true,
+						backgroundColor:"#1C1C1C",
+						backgroundImage:"",
+						backgroundVisible:true,
+						controlBarAlpha:1,
+						controlBarPrimaryColor:"#333333",
+						controlBarSecondaryColor:"#CCCCCC",
+						controlsHideSpeed:2,
+						fullScreenButton:true,
+						imageBorderColor:"#FFFFFF",
+						imageBorderSize:4,
+						loadOriginalImages:false,
+						preloaderPosition: 'centered', // other values: topLeft, topRight
+						scaleBackground:true,
+						showImageIndex:true,
+						showImageInfos:true,
+						slideShowControls:true,
+						slideShowSpeed:6,
+						textBackgroundAlpha:0.5,
+						textBackgroundColor:"#000000",
+						textColor:"#FFFFFF",
+						thumbHeight: 25,
+						thumbWidth: 25,
+						
+						//audio
+						audioPlayerOn: null,
+						audioPlayerOff: null,
+						audioPlayMode: 'audioOff', // other values: audioOn, synchronizeWithSlideshow 
+						audioPlayerIcon: 'speaker',
+						audioPlayerColor: '#ffffff',
+						loopAudio: true,
+						audioFile: null,
+						audioFileAlt: null,
+
+						//fonts
+						fontName: '',
+						fontSize: 11,
+						bold: false,
+						italic: false,
+						textTopOffset: 0,
+						
+						domainKeys: ''
+					});
+				}catch(err){}
+			})();
+		</script>
+		
+		<!-- Embed code ends here -->
+		
+	</div>
+</body>
+
+</html>

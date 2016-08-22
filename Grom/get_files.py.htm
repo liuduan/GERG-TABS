@@ -1,0 +1,156 @@
+
+#
+"""
+get_files.py
+LIU Duan.
+
+The purpose of this program is to get the NetCDF files from 
+http://csanady.tamu.edu/GNOME/gnome2.html
+http://csanady.tamu.edu/GNOME/GROM-fore-reg-sfc-72/GROM-fore-reg-11-11-15-06-72.nc
+
+"""
+
+
+import urllib2 
+import time
+import datetime
+import os.path
+import netCDF4
+
+t_start = time.time()
+########### Function #################
+
+# From datetime to epoch seconds
+def datetime_to_seconds(date_time):
+    target_hour0 = datetime.datetime.strptime(date_time, "%Y-%m-%d %H:%M:%S")
+    target_hour0_ep = time.mktime(target_hour0.timetuple())
+    return target_hour0_ep
+	
+def name_to_seconds(part_name):														# may not need.
+# From file name to epoch seconds. format "11-11-04-18"
+    target_hour0 = datetime.datetime.strptime(part_name, "%y-%m-%d-%H")
+    target_hour0_ep = netCDF4.date2num(target_hour0, "seconds since 1970-01-01 00:00:00")
+    return target_hour0_ep
+
+def check_file_exit(file_path_and_name):
+    # check the file exit in several ways.
+    file_exit_value = 0
+    if not os.path.lexists(file_path_and_name): 
+        file_exit_value = file_exit_value -1
+        print "Not Exists:", file_path_and_name, 
+		
+    try:
+        test_CDF = netCDF4.Dataset(file_path_and_name, mode='r')
+        print "Exists:", file_path_and_name, ", go to next file."
+        test_CDF.close()
+    except RuntimeError as ea:
+        # print ea #print("({})".format(ea))
+        print ". Not Exists again.",		
+        file_exit_value = file_exit_value -1
+		
+    try:
+        dirList = os.listdir("/home/liuduan/testpages/Grom/")
+        search_list = dirList.index(file_path_and_name) 
+    except ValueError:
+        print " Not Exists 3rd time."		
+        file_exit_value = file_exit_value -1
+    return file_exit_value    # if -3, not exist
+	
+################## Just get one file
+
+"""
+# get specific file.
+NetCDF_file_name = "GROM-fore-reg-12-04-09-18-72.nc"
+
+if os.path.exists(NetCDF_file_name):
+    print "Exists:", NetCDF_file_name
+else: print "not exist"
+
+# print "before"
+NetCDF_file = urllib2.urlopen("http://csanady.tamu.edu/GNOME/GROM-fore-reg-sfc-72/" + NetCDF_file_name)      # if 48, change this line too.
+# print "after"
+
+
+output_f = open("/home/liuduan/testpages/Grom/" + NetCDF_file_name,'wb') 
+# print "opened, before write"
+output_f.write(NetCDF_file.read()) 
+# print "wrote, before close"
+output_f.close() 
+NetCDF_file.close()
+print "Got:  ", NetCDF_file_name
+		
+exit()
+"""
+
+################################
+
+# get UTC time now to Epoch Seconds.
+t = datetime.datetime.utcnow()
+Now_UTC_sec = time.mktime(t.timetuple())
+# print
+# print "Epoch Seconds:", Now_UTC_sec
+
+days_before = 0 					              ################# get past files for how many days before.  ##################
+
+Time_now = datetime.datetime.fromtimestamp(Now_UTC_sec - 3600*24*days_before)           # get past files 2 days at a time.
+print 'Now UTC in date format: ', Time_now
+today = str(Time_now)[2:10]
+print "month_date: ", today
+
+
+yesterday = str(datetime.datetime.fromtimestamp(Now_UTC_sec - 3600*24*(days_before+1)))[2:10]          # get past files 2 days at a time.
+
+for month_date in [yesterday, today]:
+    for time_hour in ["-00-72.nc", "-06-72.nc", "-12-72.nc", "-18-72.nc"]:
+        NetCDF_file_name = "GROM-fore-reg-" + month_date + time_hour
+
+        if check_file_exit(NetCDF_file_name) > -3:
+            continue
+
+        else:
+            try:
+                NetCDF_file = urllib2.urlopen("http://csanady.tamu.edu/GNOME/GROM-fore-reg-sfc-72/" + NetCDF_file_name) 
+                output_f = open("/home/liuduan/testpages/Grom/" + NetCDF_file_name,'wb') 
+                output_f.write(NetCDF_file.read()) 
+                output_f.close() 
+                NetCDF_file.close()
+                print "Got:  ", NetCDF_file_name
+            except urllib2.HTTPError:
+                print "Oops!  ", NetCDF_file_name, " is not available."
+                try:
+                    NetCDF_file_name = NetCDF_file_name[:-5]+"48.nc"
+			
+                    try: 
+                        test_CDF = netCDF4.Dataset(NetCDF_file_name, mode='r')
+                        print "Exists:", NetCDF_file_name, ", go to next file."
+                        test_CDF.close()
+                        continue
+			
+                    except RuntimeError as e:	
+                        # print e #print("({})".format(e))
+                        NetCDF_file = urllib2.urlopen("http://csanady.tamu.edu/GNOME/GROM-fore-reg-sfc-48/" + NetCDF_file_name) 
+                        output_f = open("/home/liuduan/testpages/Grom/" + NetCDF_file_name,'wb') 
+                        output_f.write(NetCDF_file.read()) 
+                        output_f.close() 
+                        NetCDF_file.close()
+                        print "Got:    ", NetCDF_file_name
+                except urllib2.HTTPError:
+                    print "Oops!  ", NetCDF_file_name, " is not available neither."
+                    print 		
+		
+# target_hour0 = datetime.datetime.strptime(date_time, "%Y-%m-%d %H:%M:%S")
+print 'Finished in %7.3f seconds' % (time.time()-t_start)
+
+################################ Delete files that are more than a month old.
+print 'list files'
+dir_files = os.listdir("/home/liuduan/testpages/Grom/") 
+for file in dir_files:
+	if file[:14] == "GROM-fore-reg-":
+   		# print file
+		print file[14:22]
+		print name_to_seconds(file[14:22]+"-00")
+		if (Now_UTC_sec - name_to_seconds(file[14:22]+"-00")) > (3600 * 24 *30):
+			print "too old"
+			os.remove(file) 
+			print " file removed."
+print "Epoch Seconds:", Now_UTC_sec

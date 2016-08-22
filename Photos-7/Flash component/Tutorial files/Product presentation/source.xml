@@ -1,0 +1,54 @@
+﻿<!--
+This XML file contains the list of images used for the slide show. Each image can have up
+to three versions: a small sized version to be used as thumbnail, a larger sized version
+used as normal images and full screen sized version (the largest size) displayed while the
+slide show is in the full screen mode.
+
+Each version of the image has its own path, that has to be specifed within the appropriate
+XML tags:
+- <thumbnailPath></thumbnailPath> - between these two tags, you have to specify the path
+and file name of the thumbnail image
+- <largeImagePath></largeImagePath> - these two tags must contain the path and file name
+of the normal sized image - YOU SHOULD ALWAYS SET AT LEAST THIS IMAGE
+- <fullScreenImagePath></fullScreenImagePath> - these tags contain the path and file name
+of the large sized images, used for the full screen view
+
+The <title> and <description> tags contain the title and description of the image. This
+information should be added inside the CDATA section. However, it is not necessary to add
+title and description to the images.
+
+For more information about XML please read this documentation: http://en.wikipedia.org/wiki/XML
+For more information about the structure of the source XML file, please consult the 
+The Source XML File.pdf document.
+-->
+<album>		<!-- This is the main tag of the XML file. There should always be main tag. -->
+	<items>		<!-- The <items> tag contains the list of images used by the slide show. -->
+		<item>		<!-- The details for each image must be enclosed within the <item> tag. -->
+			<!-- The thumbnail was not specified since this particular template does not use thumbnails. -->
+			<largeImagePath>large/image01.jpg</largeImagePath>
+			<!-- The full screen image was not specified since this particular template does not use it. When entering into full screen, the normal sized image will be used instead of the full screen image. -->
+			<title><![CDATA[]]></title>
+			<description><![CDATA[]]></description>
+		</item>
+		<item>
+			<largeImagePath>large/image02.jpg</largeImagePath>
+			<title><![CDATA[]]></title>
+			<description><![CDATA[]]></description>
+		</item>
+		<item>
+			<largeImagePath>large/image03.jpg</largeImagePath>
+			<title><![CDATA[]]></title>
+			<description><![CDATA[]]></description>
+		</item>
+		<item>
+			<largeImagePath>large/image04.jpg</largeImagePath>
+			<title><![CDATA[]]></title>
+			<description><![CDATA[]]></description>
+		</item>
+		<item>
+			<largeImagePath>large/image05.jpg</largeImagePath>
+			<title><![CDATA[]]></title>
+			<description><![CDATA[]]></description>
+		</item>
+	</items>
+</album>
